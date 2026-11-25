@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ChatGPT Work &amp; Codex Setup Guide</title>
+<meta name="description" content="Set up ChatGPT Pro, connect Google apps, and publish this guide with GitHub and Vercel.">
+<style>
+:root { color-scheme: light; --ink:#14271f; --muted:#465b51; --green:#175844; --line:#cbdad0; --paper:#f6f8f4; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--paper); color:var(--ink); font:1.04rem/1.62 system-ui,sans-serif; }
+.wrap { max-width:69rem; margin:auto; padding-inline:clamp(1.15rem,4vw,3rem); }
+header { background:#14362b; color:#fff; padding:clamp(2.8rem,9vw,6rem) 0 2.5rem; }
+h1,h2,h3 { line-height:1.14; }
+h1 { font:600 clamp(2.55rem,7vw,5.25rem)/1.03 Georgia,serif; letter-spacing:-.045em; margin:0 0 .8rem; }
+header p { max-width:42rem; color:#e1f0e6; margin:.5rem 0 1.35rem; }
+nav { display:flex; flex-wrap:wrap; gap:.5rem; }
+nav a { color:#fff; border:1px solid #9dbdad; border-radius:.4rem; padding:.26rem .62rem; }
+main { display:grid; gap:1rem; margin-block:1.5rem 3rem; }
+section { background:#fff; border:1px solid var(--line); border-radius:.75rem; padding:clamp(1rem,3.2vw,2.1rem); scroll-margin-top:1rem; }
+h2 { font:600 clamp(1.7rem,4vw,2.5rem)/1.12 Georgia,serif; letter-spacing:-.025em; margin:0 0 .75rem; }
+h3 { margin:1.45rem 0 .5rem; font-size:1.12rem; }
+p { margin:.65rem 0; }
+ul,ol { margin:.55rem 0; padding-left:1.5rem; }
+li + li { margin-top:.38rem; }
+a { color:var(--green); text-underline-offset:.19em; }
+a:focus-visible { outline:2px solid #f29e4c; outline-offset:3px; }
+code { background:#eef3ee; padding:.1em .26em; border-radius:.25em; overflow-wrap:anywhere; }
+blockquote { margin:.65rem 0 1rem; padding:.65rem .85rem; border-left:3px solid #53816e; background:#edf5ef; }
+small,.sources { color:var(--muted); }
+.sources { font-size:.89rem; margin-top:1rem; }
+footer { padding:0 0 2rem; }
+@media print { body,header,section { background:white; color:black; } header p,nav a { color:black; } header { padding:1rem 0; } section { padding:.85rem; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>ChatGPT Work &amp; Codex</h1>
+    <p>Set up your account, connect Gmail, Drive, and Calendar, then publish this guide with GitHub and Vercel.</p>
+    <nav aria-label="Guide sections">
+      <a href="#account">Account</a>
+      <a href="#google">Google apps</a>
+      <a href="#github">GitHub</a>
+      <a href="#vercel">Vercel</a>
+      <a href="#updates">Updates</a>
+    </nav>
+  </div>
+</header>
+<div class="wrap">
+<main>
+<section id="account">
+  <h2>Create your account and select Pro 100</h2>
+  <p><strong>ChatGPT Pro 100 is $100 USD per month</strong> and includes Work and Codex. Use Work for tasks that draw on your Google apps and Codex for coding and website updates.</p>
+  <ol>
+    <li>On your computer, open <a href="https://chatgpt.com/">ChatGPT</a>. Use your own browser profile during setup if someone else is helping you.</li>
+    <li>Select <strong>Sign up</strong>. Choose <strong>Continue with Google</strong> and select your intended Google account, or follow the email sign-up flow. If you already have a ChatGPT account you want to use, sign in with its existing method.</li>
+    <li>Open your profile menu and confirm the email under <strong>Settings → Account</strong>.</li>
+    <li>While signed in, open <a href="https://chatgpt.com/pricing/">ChatGPT pricing</a>. Choose <strong>Pro 100</strong>, check the monthly total and billing details, then complete checkout. Confirm your plan in Settings.</li>
+    <li>Download and install the <a href="https://chatgpt.com/download/">ChatGPT desktop app</a> for macOS or Windows. Sign in with the same account.</li>
+    <li>In the desktop app, select <strong>ChatGPT</strong> in the app menu and choose <strong>Work</strong> in the mode toggle. To work on code later, switch to <strong>Codex</strong> in the app menu.</li>
+  </ol>
+  <p>Keep your login, recovery methods, and Google approval prompts under your control. A friend can walk you through the screens while you sign in and approve access.</p>
+  <p class="sources"><a href="https://help.openai.com/en/articles/9793128-about-chatgpt-pro-tiers">Pro plan details</a> · <a href="https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex">Work and Codex</a> · <a href="https://help.openai.com/en/articles/10471989-openai-account-sharing-policy">Account sharing policy</a></p>
+</section>
+
+<section id="google">
+  <h2>Connect your Google apps</h2>
+  <p>Your ChatGPT sign-in and your Google app permissions are separate. For a Google-hosted mailbox, Gmail is the app to connect for email. If you also use a separate mailbox, look for its provider’s plugin and connect that mailbox separately.</p>
+  <ol>
+    <li>In ChatGPT, open <strong>Plugins</strong> in the sidebar, or go to <strong>Settings → Plugins</strong>. If your interface says <strong>Apps</strong>, open <strong>Settings → Apps</strong>.</li>
+    <li>Search for <strong>Gmail</strong>. Select <strong>Install</strong> or <strong>Install plugin</strong> if shown, then <strong>Connect</strong> or <strong>Continue</strong> when prompted.</li>
+    <li>On the Google account picker, choose the account that owns the mailbox, files, and calendars you want to use. Review the requested permissions before authorizing. If ChatGPT offers a combined Google setup, choose Gmail, Google Drive, and Google Calendar there. Use <strong>Select fewer apps</strong> if you want to connect fewer. Approve the requested permissions for the apps you choose.</li>
+    <li>Back in ChatGPT, check each app’s connection under <strong>Settings → Plugins</strong> or <strong>Apps</strong>. For any unconnected app, search for its name, install if prompted, and follow its connection flow. Check the Google address shown on each connection.</li>
+    <li>Open a fresh <strong>Work</strong> chat for each test below. Select the app from the <strong>+</strong> menu or type <strong>@</strong> and choose it when available.</li>
+  </ol>
+
+  <h3>Gmail</h3>
+  <ol>
+    <li>Verify that Gmail shows the intended mailbox. If you want a predictable test, send yourself a harmless email from Gmail with the subject <em>Setup test</em>.</li>
+    <li>Run the test prompt and check that the match belongs to the right mailbox.</li>
+  </ol>
+  <blockquote>Use Gmail to find the most recent email with the subject “Setup test.” Show the subject and date only.</blockquote>
+
+  <h3>Google Drive</h3>
+  <ol>
+    <li>Verify that Google Drive shows the intended account. Pick a harmless document you can already open in that account.</li>
+    <li>Replace the example title in the prompt and open the result to verify the file.</li>
+  </ol>
+  <blockquote>Use Google Drive to find the file named “Setup Test Document.” Return its title and link. Leave the file and sharing settings unchanged.</blockquote>
+
+  <h3>Google Calendar</h3>
+  <ol>
+    <li>Verify that Google Calendar shows the intended account. Choose a date with an event you recognize on a calendar that account can access.</li>
+    <li>Run the prompt and compare the times against Google Calendar. Specify the calendar name and time zone if you use several.</li>
+  </ol>
+  <blockquote>Use Google Calendar to show the titles and start times of my next three events. Leave the calendar unchanged.</blockquote>
+
+  <h3>Review permissions or troubleshoot</h3>
+  <ul>
+    <li>In the relevant app’s settings, open <strong>Permissions</strong> where available. <strong>Always ask</strong> prompts before reads and changes. <strong>Allow read actions</strong> allows reads and prompts before changes.</li>
+    <li>If Google blocks a work account, ask the Google Workspace admin to review the ChatGPT/OpenAI app and required OAuth permissions. If ChatGPT says <strong>Disabled by admin</strong>, ask the ChatGPT workspace admin to check availability.</li>
+    <li>To remove access, open the app in <strong>Settings → Plugins</strong> or <strong>Apps</strong>, select the connected account, and choose <strong>Disconnect</strong>. Review any existing chats and saved memories separately if you want to remove them.</li>
+  </ul>
+  <p class="sources"><a href="https://help.openai.com/en/articles/20001494-connecting-and-managing-app-accounts-in-chatgpt">Connect and manage apps</a> · <a href="https://help.openai.com/en/articles/20001495-managing-app-permissions-in-chatgpt">App permissions</a> · <a href="https://help.openai.com/en/articles/10408842-google-app-data-controls-faq">Google data controls</a></p>
+</section>
+
+<section id="github">
+  <h2>Upload the HTML to GitHub</h2>
+  <p>This file is a standalone guide. Google authorization happens in ChatGPT. The HTML page serves the written instructions.</p>
+  <ol>
+    <li>Save a copy of this file as <code>index.html</code>. If you’re already viewing it in a browser, use <strong>Save Page As</strong> and choose the HTML-only format if offered.</li>
+    <li>Sign in or create an account at <a href="https://github.com/">GitHub</a>. Open <a href="https://github.com/new">New repository</a>.</li>
+    <li>Choose the GitHub account that should own the repo. Enter a name such as <code>chatgpt-setup-guide</code> and choose your visibility. A private repo limits who can read the source.</li>
+    <li>Enable <strong>Add README</strong> to initialize the repo, then select <strong>Create repository</strong>.</li>
+    <li>On the repository’s <strong>Code</strong> tab, choose <strong>Add file → Upload files</strong>. Drop in <code>index.html</code> at the top level beside the README.</li>
+    <li>Enter a commit message such as <code>Add setup guide</code>, then select <strong>Commit changes</strong>. Confirm <code>index.html</code> appears at the top level of the default branch.</li>
+  </ol>
+  <p class="sources"><a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository">Create a repository</a> · <a href="https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository">Upload a file</a></p>
+</section>
+
+<section id="vercel">
+  <h2>Deploy the GitHub repo on Vercel</h2>
+  <ol>
+    <li>Sign up or sign in at <a href="https://vercel.com/">Vercel</a>. Select the Vercel account or team that should own the site. Hobby is for personal, non-commercial use. Choose Pro for business use.</li>
+    <li>In the dashboard, choose <strong>Add New → Project</strong>. Connect GitHub or install the Vercel GitHub app if prompted. Grant it access to the guide repository.</li>
+    <li>Find <code>chatgpt-setup-guide</code> under <strong>Import Git Repository</strong> and select <strong>Import</strong>.</li>
+    <li>Set the <strong>Framework Preset</strong> to <strong>Other</strong>. Keep the <strong>Root Directory</strong> at the repository root. In <strong>Build and Output Settings</strong>, turn on the <strong>Build Command</strong> override and leave its field empty. Leave the output directory at its default. This page requires zero environment variables.</li>
+    <li>Select <strong>Deploy</strong>. Once the deployment is ready, open the project’s <code>.vercel.app</code> domain and test the navigation and layout.</li>
+    <li>If access should be restricted, open <strong>Security → Deployment Protection</strong> and choose <strong>All Deployments</strong> under Vercel Authentication. Verify the intended access from a signed-out window. GitHub visibility and site access are configured separately.</li>
+  </ol>
+  <p class="sources"><a href="https://vercel.com/docs/git/vercel-for-github">Vercel for GitHub</a> · <a href="https://vercel.com/docs/builds/configure-a-build#skip-build-step">Static build settings</a> · <a href="https://vercel.com/docs/plans/hobby">Hobby plan</a> · <a href="https://vercel.com/changelog/protect-production-deployments-for-free-on-every-plan">Protect production deployments</a></p>
+</section>
+
+<section id="updates">
+  <h2>Update the guide with Codex</h2>
+  <ol>
+    <li>For a first edit, open the repo on GitHub, select <code>index.html</code>, click the pencil icon, and commit the change. Or clone the repo to your computer and open that folder in Codex for local edits.</li>
+    <li>Try this Codex prompt in the local folder. Open <code>index.html</code> in a browser to review the result, then commit and push the changes to GitHub.</li>
+  </ol>
+  <blockquote>Update the selected section in index.html using the instructions I give you. Keep the page self-contained. Check that the section links work and summarize the changes.</blockquote>
+  <ol start="3">
+    <li>Vercel deploys changes pushed or merged to the configured production branch, usually <code>main</code>. Open <strong>Deployments</strong> in Vercel and confirm the latest deployment is ready, then check the live page.</li>
+    <li>If the home page returns a 404, confirm the file is exactly <code>index.html</code>, it is committed at the configured root, and your project is deploying the intended branch.</li>
+  </ol>
+  <p class="sources"><a href="https://help.openai.com/en/articles/11369540-using-codex-with-your-chatgpt-plan">Codex setup</a> · <a href="https://vercel.com/docs/git/vercel-for-github">GitHub deployments</a></p>
+</section>
+</main>
+<footer><small>Setup instructions checked November 25, 2026.</small></footer>
+</div>
+</body>
+</html>
